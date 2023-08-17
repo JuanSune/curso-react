@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <h1>Ola gente, como vai?</h1>
       <p>Meu primeiro código?</p>
-      <Hello/>
+      <Hello></Hello>
     </div>
   );
 }
