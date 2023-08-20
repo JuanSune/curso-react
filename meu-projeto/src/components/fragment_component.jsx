@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 function frag(x){
     return(
         <>
@@ -7,5 +9,16 @@ function frag(x){
         </>
     )
 }
+
+frag.propTypes = {
+    nome: PropTypes.string,
+    data: PropTypes.string
+}
+
+frag.defaultProps = {
+    nome: 'Nome não informado',
+    data: 'Data não informada'
+}
+
 
 export default frag;

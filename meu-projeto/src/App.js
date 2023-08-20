@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <SayMyName nome={"juan"} idade={"13"} profissao={"Administrador"}></SayMyName>
      <FragJSX nome='Juan' data='Boa Tarde'></FragJSX>
-      
+     <FragJSX nome='Lucas' ></FragJSX>
     </div>
   );
 }
