@@ -1,13 +1,14 @@
-import fragHere from './components/fragment_component';
+
 import './App.css';
 import SayMyName from './components/SayMyName';
+import FragJSX from './components/Fragment_component'
 
 function App() {
   return (
     <div className="App">
       <SayMyName nome={"juan"} idade={"13"} profissao={"Administrador"}></SayMyName>
-      <fragHere marca='ferrari'></fragHere>
-      <fragHere marca='volkswagen'></fragHere>
+     <FragJSX nome='Juan'></FragJSX>
+      
     </div>
   );
 }

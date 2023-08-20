@@ -1,10 +1,9 @@
 function frag(x){
     return(
         <>
-            <ul>
-                <li>{x.marca}</li>
-            </ul>
-            <p>TESTE</p>
+            
+                <li>Tudo bem caro {x.nome}</li>
+            
         </>
     )
 }
