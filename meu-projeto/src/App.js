@@ -1,13 +1,12 @@
 
 import './App.css';
-import Hello from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
 
 function App() {
   return (
     <div className="App">
-      <h1>Ola gente, como vai?</h1>
-      <p>Meu primeiro código?</p>
-      <Hello></Hello>
+      <SayMyName nome={"juan"} idade={"13"} profissao={"Administrador"}></SayMyName>
+      
     </div>
   );
 }
