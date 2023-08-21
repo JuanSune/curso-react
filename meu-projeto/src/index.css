@@ -8,6 +8,10 @@ body {
   padding-bottom: 50px;
 }
 
+div {
+  padding-bottom: 10px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
