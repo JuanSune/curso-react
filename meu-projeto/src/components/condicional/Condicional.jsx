@@ -4,14 +4,17 @@ import { useState } from "react"
 
 function Condicional(){
     const [ name, setName ] = useState()
+    const [ userName, setUserName ] = useState()
 
-    function NovoNome(){
-
+    function NovoNome(x){
+        x.preventDefault()
+        console.log(name)
+        setUserName(name)
     }
 
     return(
         <div>
-            <form>
+            <form onSubmit={NovoNome}>
                 <div>
                     <input type="text" 
                     placeholder='Digite seu nome' onChange={(e) => setName(e.target.value)}/>
@@ -20,6 +23,12 @@ function Condicional(){
                     <button type="submit">Cadastre-se</button>
                 </div>
             </form>
+            <div>
+                {userName && (
+                    <h1>Tudo bem senhor {name}</h1>
+                )}
+                
+            </div>
         </div>
     )
 }
