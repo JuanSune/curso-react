@@ -1,21 +1,22 @@
 //Aqui e como faz a condiocional no REACT
 
-import { userState } from 'react' 
+import { useState } from "react" 
 
-function condicional(){
-    const [ name, setName ] = userState()
+function Condicional(){
+    const [ name, setName ] = useState()
     return(
         <div>
             <form>
                 <div>
-                    
+                    <input type="text" 
+                    placeholder='Digite seu nome' />
                 </div>
                 <div>
-
+                    <button type="submit">Cadastre-se</button>
                 </div>
             </form>
         </div>
     )
 }
 
-export default condicional;
+export default Condicional;
